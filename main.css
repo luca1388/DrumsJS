@@ -4,10 +4,9 @@
 }
 
 .container {
-    /* background-image: url('./background.jpg'); */
-    background-color: #666;
-    /* background-repeat: no-repeat;
-    background-size: cover; */
+    background-image: url('./background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     flex: 1;
     display: flex;
