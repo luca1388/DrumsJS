@@ -5,12 +5,13 @@ document.addEventListener('keydown', event => {
         return element.dataset.key === event.code
     });
 
-    pressedKey.classList.add(playingClassName);
+    if (pressedKey) {
+        const player = document.getElementById(pressedKey.dataset.key);
+        player.currentTime = 0;
+        player.play();
 
-    // setTimeout(() => {
-    //     pressedKey.classList.remove(playingClassName);
-    // }, 500);
-    console.log(pressedKey);
+        pressedKey.classList.add(playingClassName);
+    }
 });
 
 document.addEventListener('keyup', event => {
@@ -18,5 +19,7 @@ document.addEventListener('keyup', event => {
         return element.dataset.key === event.code
     });
 
-    pressedKey.classList.remove(playingClassName);
+    if (pressedKey) {
+        pressedKey.classList.remove(playingClassName);
+    }
 });
