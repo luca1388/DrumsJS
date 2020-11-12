@@ -1,0 +1,31 @@
+{
+  "name": "drumsjs",
+  "version": "1.0.0",
+  "description": "A simple Drums demo built with Javascript",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel index.js -d dist",
+    "start": "babel index.js -d dist && serve .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luca1388/DrumsJS.git"
+  },
+  "keywords": [
+    "javascript",
+    "html"
+  ],
+  "author": "luca1388",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luca1388/DrumsJS/issues"
+  },
+  "homepage": "https://github.com/luca1388/DrumsJS#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "serve": "^11.3.2"
+  }
+}
